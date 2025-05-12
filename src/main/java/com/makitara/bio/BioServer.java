@@ -15,7 +15,6 @@ public class BioServer {
             int len;
             while ((len = clientInput.read(bytes)) != -1) {
                 System.out.println(new String(bytes,  0, len));
-                System.out.println("===");
             }
             socket.close();
             System.out.println("Client disconnected");

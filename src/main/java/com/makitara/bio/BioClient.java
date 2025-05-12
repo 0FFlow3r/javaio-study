@@ -32,6 +32,7 @@ public class BioClient {
         OutputStream clientOutput = bioClient.getOutputStream();
         for(int i = 0; i < 10; i++) {
             clientOutput.write(("-" + i + "-").getBytes());
+            Thread.sleep(1000);
             clientOutput.flush();
         }
         bioClient.close();
